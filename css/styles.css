@@ -1,0 +1,39 @@
+body{
+    background-color: rgba(118, 53, 29, 0.731);
+}
+#otsikko{
+    font-size: 40px;
+    margin: 0 auto;
+}
+#ongoing{
+    color: rgb(104, 160, 47);
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 20px;
+}
+
+footer{
+    font-style: italic;
+    padding-bottom: 1px;
+}
+
+.kurssilista {
+  max-width: 300px;
+  margin: 20px 0;
+  background: rgba(118, 53, 29, 0);
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.kurssi{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.kurssi a {
+  display: inline-block;
+  padding: 2px 12px;
+  text-decoration: none;
+  color: #222;
+  border-radius: 6px;
+}
