@@ -9,7 +9,6 @@ h1 {
 }
 
 #ongoing {
-    color: rgb(104, 160, 47);
     font-weight: bold;
     font-size: 28px;
     padding-top: 20px;
@@ -17,7 +16,9 @@ h1 {
 
 footer {
     font-style: italic;
-    padding-bottom: 1px;
+    border-top: solid black;
+    border-width: 1px;
+    padding-left: 5px;
 }
 
 .kurssilista {
@@ -38,7 +39,6 @@ footer {
 .kurssi a {
     display: inline-block;
     padding: 2px 12px;
-    text-decoration: none;
     color: #222;
     border-radius: 6px;
 }
@@ -57,4 +57,8 @@ footer {
 .deadline {
     font-size: 20px;
     margin-bottom: 10px;
+}
+
+aside{
+    padding-bottom: 10px;
 }
