@@ -66,6 +66,7 @@ footer {
     color: #222;
     border-radius: 6px;
     text-decoration: none;
+    text-align: center;
 }
 
 .kurssi a:hover {
@@ -111,9 +112,6 @@ footer {
     margin-bottom: 10px;
 }
 
-.deadline {
-    display: grid;
-}
 
 aside {
     padding-bottom: 10px;
