@@ -2,7 +2,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: rgba(29, 112, 118, 0.731);
+    background-color: rgba(191, 240, 243, 0.731);
 }
 
 main {
@@ -10,8 +10,12 @@ main {
 }
 
 h1 {
-    font-size: 40px;
+    font-size: 50px;
     margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
     text-align: center;
 }
 
@@ -47,13 +51,11 @@ footer {
 }
 
 .kurssilista .kurssi {
-    min-height: 300px;
+    min-height: 100px;
     box-sizing: border-box;
     margin: 0;
     padding: 16px;
-    border: 1px solid #222;
     border-radius: 10px;
-    border-width: 5px;
     background-color: #f3f7f7;
     border: 1px solid #c5d3d4;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
@@ -61,7 +63,9 @@ footer {
 }
 
 .kurssi a {
-    display: inline-block;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
     padding: 2px 12px;
     color: #222;
     border-radius: 6px;
@@ -107,15 +111,38 @@ footer {
     text-decoration: underline;
 }
 
-.aihe {
-    font-size: 20px;
-    margin-bottom: 10px;
+.aiheet {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
 }
 
+.aihekortti {
+    padding: 16px;
+    border: 1px solid #c5d3d4;
+    border-radius: 10px;
+    background-color: #f3f7f7;
+    font-size: 20px;
+    text-align: center;
+}
 
+.aihekortti h3{
+    text-align: center;
+}
 aside {
     padding-bottom: 10px;
 }
+
+.aside_kurssisivu {
+    border-left: 2px solid #444;
+}
+
+.aside_kurssisivu li {
+    font-size: large;
+    padding-left: 5px;
+}
+
+
 
 
 @media (max-width: 700px) {
