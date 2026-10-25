@@ -35,6 +35,7 @@ footer {
     border-top: solid black;
     border-width: 1px;
     padding-left: 5px;
+    text-align: center;
 }
 
 .kurssilista {
