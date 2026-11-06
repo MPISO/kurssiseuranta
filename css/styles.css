@@ -31,12 +31,25 @@ header {
     padding-top: 20px;
 }
 
-footer {
-    font-style: italic;
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    gap: 20px;
     border-top: solid black;
     border-width: 1px;
-    padding-left: 5px;
     text-align: center;
+}
+
+.footer-tekstit p{
+    margin: 4px 0;
+}
+
+footer img {
+    width: 70px;
+    height: auto;
+    
 }
 
 .kurssilista {
@@ -65,16 +78,25 @@ footer {
 }
 
 .kurssi a {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 12px;
     width: 100%;
     box-sizing: border-box;
-    padding: 2px 12px;
+    padding: 8px 12px;
     color: #222;
     border-radius: 6px;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
 }
 
+.kurssi-kuva{
+    width: 56px;
+    height: 56px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
 .kurssi a:hover {
     text-decoration: underline;
 }
@@ -105,8 +127,9 @@ footer {
 
 #return {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 20px;
+    
 }
 
 #return:hover {
