@@ -34,7 +34,7 @@ header {
 .etusivun-kuva {
     display: block;
     width: min(100%, 640px);
-    height: auto;
+    height: min(50%, auto);
     margin: 16px auto 0;
     border-radius: 10px;
 }
@@ -156,7 +156,7 @@ footer img {
 
 .aihekortti {
     padding: 16px;
-    border: 1px solid #c5d3d4;
+    border: 5px solid #c5d3d4;
     border-radius: 10px;
     background-color: #f3f7f7;
     font-size: 20px;
