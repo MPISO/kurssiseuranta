@@ -34,7 +34,7 @@ header {
 .etusivun-kuva {
     display: block;
     width: min(100%, 640px);
-    height: min(50%, auto);
+    height: auto;
     margin: 16px auto 0;
     border-radius: 10px;
 }
@@ -74,6 +74,7 @@ footer img {
 }
 
 .kurssilista .kurssi {
+    min-width: 0;
     min-height: 100px;
     box-sizing: border-box;
     margin: 0 5px;
@@ -91,12 +92,14 @@ footer img {
     justify-content: left;
     gap: 12px;
     width: 100%;
+    min-width: 0;
     box-sizing: border-box;
     padding: 8px 12px;
     color: #222;
     border-radius: 6px;
     text-decoration: none;
     text-align: left;
+    overflow-wrap: anywhere;
 }
 
 .kurssi-kuva{
@@ -163,9 +166,6 @@ footer img {
     text-align: center;
 }
 
-.aihekortti h3{
-    text-align: center;
-}
 aside {
     padding-bottom: 10px;
 }
