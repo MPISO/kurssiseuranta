@@ -1,12 +1,69 @@
 <!DOCTYPE html>
 <html lang="fi">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JokuLomake</title>
+    <title>Kurssipalaute</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+    <a id="return" href="index.html">Etusivulle</a>
+
+    <header>
+        <h1>Kurssipalaute</h1>
+    </header>
+
+    <main class="lomake-sisalto">
+        <section>
+            <h2>Kerro mielipiteesi kurssista</h2>
+
+            <form class="palautelomake" id="palautelomake">
+                <label for="kurssi">Kurssi</label>
+                <select id="kurssi" name="kurssi" required>
+                    <option value="linux-essentials">Linux Essentials</option>
+                    <option value="tiedonsiirto">Tiedonsiirron perusteet</option>
+                    <option value="sahkomagnetismi">Sähkömagnetismi</option>
+                    <option value="web-kehittaminen">Web-kehittämisen perusteet</option>
+                    <option value="algoritmit">Algoritmit ja tietorakenteet</option>
+                    <option value="differentiaalilaskenta">Differentiaalilaskenta</option>
+                </select>
+
+                <fieldset class="arviointi">
+                    <legend>Kuinka tyytyväinen olet kurssiin? (1 = en lainkaan, 5 = erittäin tyytyväinen)</legend>
+                    <div class="arvosanat">
+                        <label><input type="radio" name="tyytyvaisyys" value="1" required> 1</label>
+                        <label><input type="radio" name="tyytyvaisyys" value="2"> 2</label>
+                        <label><input type="radio" name="tyytyvaisyys" value="3"> 3</label>
+                        <label><input type="radio" name="tyytyvaisyys" value="4"> 4</label>
+                        <label><input type="radio" name="tyytyvaisyys" value="5"> 5</label>
+                    </div>
+                </fieldset>
+
+                <label for="hyvaa">Mikä kurssissa on toiminut hyvin? (max. 500 merkkiä)</label>
+                <textarea id="hyvaa" name="hyvaa" rows="4" maxlength="500"
+                    placeholder="Kirjoita palautteesi tähän..."></textarea>
+
+                <label for="kehitettavaa">Mitä kurssissa voisi kehittää? (max. 500 merkkiä)</label>
+                <textarea id="kehitettavaa" name="kehitettavaa" rows="4" maxlength="500"
+                    placeholder="Kirjoita kehitysehdotuksesi tähän..."></textarea>
+
+                <button type="submit">Lähetä palaute</button>
+                <p><b>HUOM! Demolomake, tietoja ei tallenneta.</b></p>
+            </form>
+
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-tekstit">
+            <p>Web-kehittämisen perusteet -kurssin projektityö</p>
+            <p>&copy; Miska Isohanni</p>
+        </div>
+        <img class="footer-kuva" src="images/happystudent.png" width="70" height="70" alt="iloinen opiskelija">
+    </footer>
+
 </body>
+
 </html>
